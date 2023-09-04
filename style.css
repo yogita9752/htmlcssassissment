@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'Spartan', sans-serif !important;
+    overflow-x: hidden;
+
+}
+.top-nav{
+    width: 100%;
+    height: 2.5em;
+    background: linear-gradient(68deg, rgba(131,41,105,1) 0%, rgba(245,82,162,1) 100%);
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0;
+
+}
+
+.inner-div-right{
+    display: flex;
+    justify-content: space-around;
+    gap:2rem;
+}
+
+.fa-brands{
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+/* .items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 20px;
+    padding: 0px 20px;
+  }
+  .items a:link {
+    text-decoration:none ;
+    color: black;
+    font-size: 1rem;
+    
+  }
+  .items a:hover {
+    color: red;
+    text-decoration-line: underline;
+  } */
+nav{
+    
+   display: flex;
+   height: 10%;
+   /* border: 2px solid green; */
+
+}
+.logo{
+ display: flex;
+ align-items: center;
+ justify-content: end;
+ width: 20%;
+
+ /* border: 2px solid black; */
+}
+.logo>img{
+    width: 7rem;
+}
+.items{
+  display: flex;
+  width: 70%;
+  /* border: 2px solid black; */
+  gap: 2rem;
+  padding-left: 5rem;
+  align-items: center;
+
+
+
+}
+.items a{
+    text-decoration: none;
+    color:black;
+    font-weight: 100;
+    font-size: 1.1rem;
+    transition:all ease-in  ;
+}
+.items a:hover{
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    color:red;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/* slider */
+.slider-container {
+    position: relative;
+    margin: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#prevBtn {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#nextBtn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* marquee container text */
+.markque-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0;
+    /* border: 2px solid yellow; */
+}
+.mark-container-left{
+     width: 20%;
+     margin-top: 2px;
+     text-align: end;
+     font-size: 0.8rem;
+     padding-bottom: 5px;
+     font-weight: 600;
+}
+.mark-container-right{
+    /* border: 2px solid black; */
+    width: 70%;
+    text-align: center;
+    padding-left: 20px;
+    color: #BB3980;
+    
+}
+
+/* welcome container  */
+.welcome-container{
+    padding: 8% 15% 15px 15%;
+  
+    text-align: center;
+}
+.welcome-container-content h1{
+    margin-bottom: 1.8rem;
+    font-size: 2rem;
+}
+.welcome-container-content p{
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+}
+.button-container{
+    background: linear-gradient( 90deg, rgba(177, 30, 111, 1) 0%, rgba(74, 14, 192, 1) 100%) !important;
+    border: 2px solid #fff !important;
+    margin-top: 1rem;
+    font-size: 15px !important;
+    padding: 10px 20px !important;
+    border-radius: 30px !important;
+    color: #fff !important;
+    display: inline-block;
+}
+
+
+
+.button-container:hover{
+    cursor: pointer;
+}
+.online-container {
+    background-image: url('./static/appbg.jpg'); 
+    background-size: cover;
+    background-position: center;
+
+    height: 80vh;
+    display: flex;
+   
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.fadedeffect {
+    background: linear-gradient(100deg, rgba(0, 0, 0, 1), rgba(35, 31, 32, 0.6)), url('./static/appbg.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    color: #fff;
+}
+.online-container-left{
+    
+    width: 50%;
+    padding-left: 40%;
+    border: 1px solid yellow;
+}
+.online-container-right{
+    width: 50%;
+    padding:auto 20px;
+    border: 1px solid skyblue;
+    
+}
